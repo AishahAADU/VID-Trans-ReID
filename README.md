@@ -28,7 +28,8 @@ iLIDS-VID Dataset
 python -u VID_Trans_ReID.py --Dataset_name 'iLIDSVID' --ViT_path 'jx_vit_base_p16_224-80ecf9dd.pth'
 ```
 
-
+## Acknowledgement
+Thanks to Hao Luo, using some implementation from his [repository](https://github.com/michuanhaohao)
 
 ## Cite
 ```
