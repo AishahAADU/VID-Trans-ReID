@@ -26,7 +26,7 @@ class PRID(object):
         split_id (int): indicates which split to use. There are totally 10 splits.
         min_seq_len (int): tracklet with length shorter than this value will be discarded (default: 0).
     """
-    root  = "/home2/zwjx97/best/prid_2011"
+    root  = "prid_2011"
     
     # root = './data/prid2011'
     dataset_url = 'https://files.icg.tugraz.at/f/6ab7e8ce8f/?raw=1'
