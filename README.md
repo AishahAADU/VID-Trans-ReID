@@ -1,5 +1,5 @@
 # VID-Trans-ReID
-VID-Trans-ReID: Enhanced Video Transformers for Person Re-identification
+This is an Official Pytorch Implementation of our paper VID-Trans-ReID: Enhanced Video Transformers for Person Re-identification
 
 [![Python 3.6](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/) Tested using Python 3.7.x and Torch: 1.8.0.
 
