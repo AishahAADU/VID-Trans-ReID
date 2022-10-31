@@ -20,10 +20,9 @@ class Mars(object):
     Args:
         min_seq_len (int): tracklet with length shorter than this value will be discarded (default: 0).
     """
-    # root = "/scratch/pp1953/data/MARS"
-    root  ='/home2/zwjx97/STE-NVAN-master/MARS' #'/home2/zwjx97/STE-NVAN-master/MARS' #"/home/aishahalsehaim/Desktop/STE-NVAN-master/MARS" 
-    # root = '/archive/p/pp1953/data/MARS'
-    # root = '/mnt/scratch/1/pathak/data/MARS'
+   
+    root  ='MARS' #'/home2/zwjx97/STE-NVAN-master/MARS' #"/home/aishahalsehaim/Desktop/STE-NVAN-master/MARS" 
+   
     train_name_path = osp.join(root, 'info/train_name.txt')
     test_name_path = osp.join(root, 'info/test_name.txt')
     track_train_info_path = osp.join(root, 'info/tracks_train_info.mat')
