@@ -15,17 +15,17 @@ Video-based person Re-identification (Re-ID) has received increasing attention r
 ## Train and Evaluate 
 MARS Datasete
 ```
-python -u VID_Trans_ReID.py --Dataset_name 'Mars'
+python -u VID_Trans_ReID.py --Dataset_name 'Mars' --ViT_path 'jx_vit_base_p16_224-80ecf9dd.pth'
 ```
 
 PRID Dataset
 ```
-python -u VID_Trans_ReID.py --Dataset_name 'PRID'
+python -u VID_Trans_ReID.py --Dataset_name 'PRID' --ViT_path 'jx_vit_base_p16_224-80ecf9dd.pth'
 ```
 
 iLIDS-VID Dataset
 ```
-python -u VID_Trans_ReID.py --Dataset_name 'iLIDSVID'
+python -u VID_Trans_ReID.py --Dataset_name 'iLIDSVID' --ViT_path 'jx_vit_base_p16_224-80ecf9dd.pth'
 ```
 
 
