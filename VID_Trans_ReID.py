@@ -1,5 +1,5 @@
 from Dataloader import dataloader
-from VID_Trans_model2 import VID_Trans
+from VID_Trans_model import VID_Trans
 
 
 from Loss_fun import make_loss
