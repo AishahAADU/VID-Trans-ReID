@@ -160,7 +160,7 @@ if __name__ == '__main__':
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = True    
     train_loader,  num_query, num_classes, camera_num, view_num,q_val_set,g_val_set = dataloader(Dataset_name)
-    model = VID_Trans( num_classes=num_classes, camera_num=camera_num)
+    model = VID_Trans( num_classes=num_classes, camera_num=camera_num,pretrainpath=pretrainpath)
     #model = build_transformer_local( num_classes=num_classes, camera_num=camera_num)
     loss_fun,center_criterion= make_loss( num_classes=num_classes)
     optimizer_center = torch.optim.SGD(center_criterion.parameters(), lr= 0.5)
