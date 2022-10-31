@@ -45,7 +45,7 @@ def dataloader(Dataset_name):
             T.RandomCrop([256, 128]),
             T.ToTensor(),
             T.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5]),
-            #RandomErasing(probability=0.5, mode='pixel', max_count=1, device='cpu'),
+            
             
         ])
 
