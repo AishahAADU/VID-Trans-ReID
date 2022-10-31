@@ -33,12 +33,13 @@ python -u VID_Trans_ReID.py --Dataset_name 'iLIDSVID' --ViT_path 'jx_vit_base_p1
 ## Test
 To test the model you can use our pretrained model on MARS dataset [download]()
 
-
-## Acknowledgement
-Thanks to Hao Luo, using some implementation from his [repository](https://github.com/michuanhaohao)
 ```
 python -u VID_Test.py --Dataset_name 'Mars' --model_path 'MarsMain_Model.pth'
 ```
+
+## Acknowledgement
+Thanks to Hao Luo, using some implementation from his [repository](https://github.com/michuanhaohao)
+
 ## Cite
 ```
 @inproceedings{alsehaim22vidtransreid,
