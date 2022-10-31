@@ -57,7 +57,7 @@ def weights_init_classifier(m):
 
 
 class VID_Trans(nn.Module):
-    def __init__(self, num_classes, camera_num):
+    def __init__(self, num_classes, camera_num,pretrainpath):
         super(VID_Trans, self).__init__()
         self.in_planes = 768
         self.num_classes = num_classes
@@ -68,9 +68,8 @@ class VID_Trans(nn.Module):
         camera=camera_num,  drop_path_rate=0.1, drop_rate=0.0, attn_drop_rate=0.0,norm_layer=partial(nn.LayerNorm, eps=1e-6),  cam_lambda=3.0)
         
           
-        state_dict = torch.load('/home2/zwjx97/TransReID-main/jx_vit_base_p16_224-80ecf9dd.pth', map_location='cpu')
+        state_dict = torch.load(pretrainpath, map_location='cpu')
         self.base.load_param(state_dict,load=True)
-
         
        
         #global stream
