@@ -159,9 +159,15 @@ if __name__ == '__main__':
 
     train_loader,  num_query, num_classes, camera_num, view_num,q_val_set,g_val_set = dataloader(Dataset_name)
     model = VID_Trans( num_classes=num_classes, camera_num=camera_num,pretrainpath=None)
-    model.load_param(pretrainpath)
+
     device = "cuda"
     model=model.to(device)
+
+    checkpoint = torch.load(pretrainpath)
+    model.load_state_dict(checkpoint)
+
+    
+    model.eval()
     cmc,map = test(model, q_val_set,g_val_set)
     print('CMC: %.4f, mAP : %.4f'%(cmc,map))
-    torch.save(model.state_dict(),os.path.join('/home2/zwjx97/VID-Trans-ReID',  Dataset_name+'Main_Model.pth')) 
+    
