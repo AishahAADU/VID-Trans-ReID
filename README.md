@@ -22,10 +22,19 @@ Video-based person Re-identification (Re-ID) has received increasing attention r
 <img width="811" alt="paper2Dig" src="https://user-images.githubusercontent.com/92983150/198893163-0673a748-e2f1-4cd2-a2d6-f491ac5ddeae.gif">
 
 
+
+
+## Requirements
+```
+pip install -r requirements.txt
+```
 ## Getting Started
+
 1. Download the ImageNet pretrained transformer model : [ViT_base](https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_p16_224-80ecf9dd.pth).
 2. Download the video person Re-ID datasets [MARS](http://zheng-lab.cecs.anu.edu.au/Project/project_mars.html), [PRID](https://www.tugraz.at/institute/icg/research/team-bischof/lrs/downloads/prid11/) and [iLIDS-VID](https://xiatian-zhu.github.io/downloads_qmul_iLIDS-VID_ReID_dataset.html)
+
 ## Train and Evaluate 
+
 Use the pre-trained model [ViT_base](https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_p16_224-80ecf9dd.pth) to initialize ViT transformer then train the whole model. 
 
 MARS Datasete
